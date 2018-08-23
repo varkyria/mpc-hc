@@ -249,6 +249,8 @@
     <ClCompile Include="library\Source\MediaInfo\Audio\File_Celt.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Audio\File_ChannelGrouping.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Audio\File_DolbyE.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\Audio\File_Dsdiff.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\Audio\File_Dsf.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Audio\File_Dts.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Audio\File_ExtendedModule.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Audio\File_Flac.cpp" />
@@ -279,14 +281,20 @@
     <ClCompile Include="library\Source\MediaInfo\Duplicate\File__Duplicate_MpegTs.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Duplicate\File__Duplicate__Base.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Duplicate\File__Duplicate__Writer.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\File_Dummy.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File_Other.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File_Unknown.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Analyze.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\File__Analyze_Buffer.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Analyze_Buffer_MinimizeSize.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\File__Analyze_Element.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Analyze_Streams.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Analyze_Streams_Finish.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Base.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\File__Duplicate.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\File__HasReferences.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__MultipleParsing.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\HashWrapper.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Image\File_ArriRaw.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Image\File_Bmp.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Image\File_Bpg.cpp" />
@@ -318,6 +326,7 @@
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_DcpCpl.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_DcpPkl.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_HdsF4m.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\Multiple\File_MiXml.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_Pmp.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_Ptx.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File__ReferenceFilesHelper.cpp" />
@@ -334,6 +343,7 @@
     <ClCompile Include="library\Source\MediaInfo\Text\File_TimedText.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Text\File_Ttml.cpp" />
     <ClCompile Include="library\Source\MediaInfo\TimeCode.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\Video\File_Av1.cpp" />
     <ClCompile Include="library\Source\MediaInfo\XmlUtils.cpp" />
     <ClCompile Include="library\Source\MediaInfo\OutputHelpers.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_Ancillary.cpp" />

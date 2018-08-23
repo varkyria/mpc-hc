@@ -1183,5 +1183,35 @@
     <ClCompile Include="library\Source\MediaInfo\Tag\File_PropertyList.cpp">
       <Filter>Source Files\Tag</Filter>
     </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\Multiple\File_MiXml.cpp">
+      <Filter>Source Files\Multiple</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\Video\File_Av1.cpp">
+      <Filter>Source Files\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\Audio\File_Dsf.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\Audio\File_Dsdiff.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\File__Analyze_Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\File__Analyze_Element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\File__Duplicate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\File__HasReferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\File_Dummy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\Source\MediaInfo\HashWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
