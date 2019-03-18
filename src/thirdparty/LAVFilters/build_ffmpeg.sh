@@ -91,15 +91,16 @@ configure() {
     --build-suffix=-lav             \
     --arch=${arch}"
 
-  EXTRA_CFLAGS="-fno-tree-vectorize -D_WIN32_WINNT=0x0601 -DWINVER=0x0601 -I../../../thirdparty/include"
+  EXTRA_CFLAGS="-fno-tree-vectorize -D_WIN32_WINNT=0x0601 -DWINVER=0x0601"
   EXTRA_LDFLAGS=""
   if [ "${arch}" == "x86_64" ]; then
     OPTIONS="${OPTIONS} --enable-cross-compile --cross-prefix=${cross_prefix} --target-os=mingw32 --pkg-config=pkg-config"
-    EXTRA_LDFLAGS="${EXTRA_LDFLAGS} -L../../../thirdparty/lib64"
+    EXTRA_CFLAGS="${EXTRA_CFLAGS} -I../../../thirdparty/64/include"
+    EXTRA_LDFLAGS="${EXTRA_LDFLAGS} -L../../../thirdparty/64/lib"
   else
     OPTIONS="${OPTIONS} --cpu=i686"
-    EXTRA_CFLAGS="${EXTRA_CFLAGS} -mmmx -msse -msse2 -mfpmath=sse -mstackrealign"
-    EXTRA_LDFLAGS="${EXTRA_LDFLAGS} -L../../../thirdparty/lib32"
+    EXTRA_CFLAGS="${EXTRA_CFLAGS} -I../../../thirdparty/32/include -mmmx -msse -msse2 -mfpmath=sse -mstackrealign"
+    EXTRA_LDFLAGS="${EXTRA_LDFLAGS} -L../../../thirdparty/32/lib"
   fi
 
   sh ../../../ffmpeg/configure --x86asmexe=yasm --extra-ldflags="${EXTRA_LDFLAGS}" --extra-cflags="${EXTRA_CFLAGS}" ${OPTIONS}
